@@ -1,6 +1,8 @@
 const fs = require('fs');
 let AuthTokens = [];
 
+const log_file = '../Db/logs.db';
+
 function GenerateRandomString(length) {
     let result = '';
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -78,11 +80,11 @@ function LogAttack(username, ip, port, time, method) {
     const date = new Date().toLocaleString();
     console.log(`[DATE: ${date}] User ${username} attacked ${ip}:${port} for ${time} seconds using method ${method}`);
     try {
-        if (!fs.existsSync('logs.db')) {
-            fs.writeFileSync('logs.db', '');
+        if (!fs.existsSync(logs_file)) {
+            fs.writeFileSync(logs_file, '');
         }
 
-        fs.appendFileSync('logs.db', `[DATE: ${date}], ${username}, ${ip}, ${port}, ${time}, ${method}\n`);
+        fs.appendFileSync(logs_file, `[DATE: ${date}], ${username}, ${ip}, ${port}, ${time}, ${method}\n`);
     } catch (e) {
         console.error('Error logging attack:', e);
     }
