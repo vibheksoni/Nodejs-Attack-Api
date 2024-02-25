@@ -33,7 +33,7 @@ In this example, the API will run on port 8080.
 
 ## 3. Credits
 ```
-This API was developed by Vibhek Soni. Special thanks to all contributors and testers.
+This API was developed by Vibhek Soni && Acker Posiden. Special thanks to all contributors and testers.
 
 For any issues or suggestions, please open an issue on GitHub.
 ```
