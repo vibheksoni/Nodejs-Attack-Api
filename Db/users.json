@@ -1,0 +1,11 @@
+{
+    "users": {
+        "root": {
+            "password": "root",
+            "cons": 1,
+            "time": 10,
+            "hwid": "root",
+            "ip": "::1"
+        }
+    }
+}
