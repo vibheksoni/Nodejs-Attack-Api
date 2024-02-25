@@ -37,3 +37,4 @@ This API was developed by Vibhek Soni && Acker Posiden. Special thanks to all co
 
 For any issues or suggestions, please open an issue on GitHub.
 ```
+1. <a href="https://github.com/dev17V">Dev17v</a>
