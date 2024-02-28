@@ -1,7 +1,7 @@
 const fs = require('fs');
 let AuthTokens = [];
 
-const log_file = '../Db/logs.db';
+const log_file = 'Db/logs.db';
 
 function GenerateRandomString(length) {
     let result = '';

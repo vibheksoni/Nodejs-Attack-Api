@@ -1,8 +1,8 @@
 const fs = require('fs');
 const { type } = require('os');
 
-const db_file = '../Db/users.json';
-const admin_file = '../Db/adminkeys.txt';
+const db_file    = 'Db/users.json';
+const admin_file = 'Db/adminkeys.txt';
 
 function GetDatabase() {
     try {
